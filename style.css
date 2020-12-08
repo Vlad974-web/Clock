@@ -7,10 +7,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /*display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;*/
     -webkit-animation: AnimationName 30s ease infinite;
     -moz-animation: AnimationName 30s ease infinite;
     animation: AnimationName 30s ease infinite;

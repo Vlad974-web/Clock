@@ -1,10 +1,10 @@
 const clock = document.getElementById('clock')
 
 function clockTime() {
-    const time = new Date()
-    const h = time.getHours().toString()
-    const m = time.getMinutes().toString()
-    const s = time.getSeconds().toString()
+    let time = new Date()
+    let h = time.getHours().toString()
+    let m = time.getMinutes().toString()
+    let s = time.getSeconds().toString()
 
     if(h.length < 2) {
         h = '0' + h
@@ -14,7 +14,7 @@ function clockTime() {
         s = '0' + s
     }
 
-    const clockString = h + ':' + m + ':' + s
+    let clockString = h + ':' + m + ':' + s
     clock.textContent = clockString 
 }
 setInterval(clockTime, 1000)
